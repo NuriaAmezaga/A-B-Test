@@ -43,6 +43,8 @@ Conversion rates help determine the efficiency of each funnel step:
 - Top of the Funnel: The “SHOP NOW” button has a 2% conversion rate.
 - Middle and Bottom of the Funnel: Subsequent steps have conversion rates of more than 30%.
 
+![image](https://github.com/NuriaAmezaga/A-B-Test/assets/168557674/63b276cb-b4ef-432c-815a-7c121dca76b7)
+
 ### Click-Through Rate (CTR)
 
 With the goal of increasing the conversion rate of the “SHOP NOW” button, marketing has asked the Design team for a redesign of the button, resulting in the following versions:
