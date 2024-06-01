@@ -61,6 +61,20 @@ It seems like the red variations are the worst performers, while the white butto
 - **Null Hypothesis**: The 4 versions of the button are equally likely to receive clicks, and the observed differences are due to chance.
 - **Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much fewer clicks than the others that this can hardly be explained just by chance.
 
-This is how data should be shaped so that we can perform a chi-square test using the `chi2_contingency` function from `scipy`, and finally see whether the results are significant. In other words, whether the values in the rows (“Click” or “No-click”) depend on the values in the columns (“Version_A”,  “Version_B”, “Version_C”,  “Version_D”).
+We perform a chi-square test using the `chi2_contingency` function from `scipy`, and finally see whether the results are significant. 
 
+## Results
+
+The version with the highest click-through rate, Version C, exhibits a statistically significant difference when compared to Versions B and D, but not to Version A, which possesses the second-highest click-through rate. As a result, declaring a clear winner based on post hoc tests becomes challenging. Therefore, we can only say that both Version C and Version A are the winners.
+
+However, if a definitive winner is required, additional steps need to be implemented. This is where we transition from the realm of statistics to the business world. The following actions can help in determining the version to be featured on the website in the future:
+
+- Consider other metrics alongside the click-through rate.
+- Incorporate qualitative research findings.
+- Seek input from subject-matter experts.
+- Redesign the experiment and conduct it once more.
+
+## Conclusion
+
+Through this project, I have learned about the possible statistical performances and how to interpret the results effectively. Even when the significant statistics are not clear, taking into account other metrics implicated in the business world is very useful. These additional insights can provide a more comprehensive understanding of user behavior and guide better decision-making for future optimizations.
 
