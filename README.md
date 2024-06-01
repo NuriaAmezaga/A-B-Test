@@ -45,7 +45,7 @@ Conversion rates help determine the efficiency of each funnel step:
 
 ### Click-Through Rate (CTR)
 
-With the goal of increasing the conversion rate of the “SHOP NOW” button (when a conversion is a “click”, you might see the term “click-through rate”, abbreviated CTR, used instead of conversion rate), Marketing has asked the Design team for a redesign of the button, resulting in the following versions:
+With the goal of increasing the conversion rate of the “SHOP NOW” button, marketing has asked the Design team for a redesign of the button, resulting in the following versions:
 
 - **Version A**: The original site.
 - **Version B**: The “SHOP NOW” button is now red.
@@ -54,16 +54,12 @@ With the goal of increasing the conversion rate of the “SHOP NOW” button (wh
 
 ### Experimentation and Analysis
 
-To improve conversion rates, we will experiment with different elements, such as the design and color of the “SHOP NOW” button. For instance, changing the button's color might increase conversions, but it's essential to compare conversion rates rather than absolute numbers to account for varying traffic levels.
-
 While exploring the data from the different versions of the website, that they had strong differences in click-through rates. Those rates can be calculated by simply dividing the clicks that each element of interest got (the elements “SHOP NOW” and “SEE DEALS”) by the overall number of visits on each page.
 
-It seems like the red variations are the worst performers, while the white buttons perform much better. But, are those differences due to chance? This is what we are going to test:
+It seems like the red variations are the worst performers, while the white buttons perform much better. But, are those differences due to chance? 
 
 - **Null Hypothesis**: The 4 versions of the button are equally likely to receive clicks, and the observed differences are due to chance.
-- **Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much fewer clicks than the others that this can hardly be explained just by chance (i.e. they have a better/worse CTR, a better/worse performance).
-
-By going back to the original counts that produce these rates, we can create a contingency table like the one below. Since we are only interested in people clicking on that single element, here the counts on “Click” are the clicks on that element and “No-click” is simply calculated as visits - clicks.
+- **Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much fewer clicks than the others that this can hardly be explained just by chance.
 
 This is how data should be shaped so that we can perform a chi-square test using the `chi2_contingency` function from `scipy`, and finally see whether the results are significant. In other words, whether the values in the rows (“Click” or “No-click”) depend on the values in the columns (“Version_A”,  “Version_B”, “Version_C”,  “Version_D”).
 
