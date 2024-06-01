@@ -52,6 +52,9 @@ With the goal of increasing the conversion rate of the “SHOP NOW” button, ma
 - **Version C**: The “SHOP NOW” button has a new text, “SEE DEALS”.
 - **Version D**: Both the changes from Version B and Version C have been applied.
 
+  ![image](https://github.com/NuriaAmezaga/A-B-Test/assets/168557674/36705182-7a82-49b7-9a61-5bbcbe7f0fe5)
+
+
 ### Experimentation and Analysis
 
 While exploring the data from the different versions of the website, that they had strong differences in click-through rates. Those rates can be calculated by simply dividing the clicks that each element of interest got (the elements “SHOP NOW” and “SEE DEALS”) by the overall number of visits on each page.
